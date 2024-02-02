@@ -12,6 +12,11 @@ class Student(models.Model):
 
     def __str__(self):
         return self.name
+    
+    class Meta:
+        verbose_name = "O'quvchi"
+        verbose_name_plural = "O'quvchilar"
+
 
 
 class Category(models.Model):
@@ -20,6 +25,10 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
+    
+    class Meta:
+        verbose_name = "Fan"
+        verbose_name_plural = "Fanlar"
 
 class GroupPost(models.Model):
     group_name = models.CharField(max_length=255)
@@ -27,6 +36,10 @@ class GroupPost(models.Model):
 
     def __str__(self):
         return self.group_name
+    
+    class Meta:
+        verbose_name = "Guruh"
+        verbose_name_plural = "Guruhlar"
 
 # from student.models import *
 
